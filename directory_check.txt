@@ -1,0 +1,9 @@
+Public Function FileFolderExists(strFullPath As String) As Boolean
+'Author       : Ken Puls (www.excelguru.ca)
+'Macro Purpose: Check if a file or folder exists
+    On Error GoTo EarlyExit
+    If Not Dir(strFullPath, vbDirectory) = vbNullString Then FileFolderExists = True
+    
+EarlyExit:
+    On Error GoTo 0
+End Function
