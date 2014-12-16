@@ -1,0 +1,3 @@
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set oFile = fso.CreateTextFile("FileName")
+oFile.WriteLine "Test"
