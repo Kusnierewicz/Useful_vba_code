@@ -1,0 +1,8 @@
+Box = MsgBox("Test?", vbYesNo)
+
+If Box = vbYes Then
+  'MsgBox "Yes"
+Else
+  MsgBox "No"
+  Exit Sub
+End If
